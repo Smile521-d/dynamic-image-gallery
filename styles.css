@@ -1,0 +1,112 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container for the image gallery */
+.container {
+    max-width: 800px; /* Limit width to 800px */
+    background-color: #fff; /* White background for container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem; /* Larger font size for heading */
+    color: #333; /* Dark text color */
+    text-align: center;
+}
+
+/* Main image display */
+#featured {
+    max-width: 80%; /* Responsive image */
+    border: 1px solid #ccc; /* Light border around the image */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Caption and interesting fact section */
+figcaption {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+figcaption h2 {
+    font-size: 1.4rem; /* Medium font size for captions */
+    color: grey;
+    
+}
+
+figcaption p {
+    font-size: 1rem; /* Example font size */
+    color: #777; /* Example text color */
+    text-align: center; /* Center align the text */
+    margin-top: 20px; /* Example margin top */
+}
+
+/* Thumbnail list styles */
+#thumbnails {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arrange thumbnails in a vertical column */
+    align-items: flex-start; /* Align thumbnails to the left side */
+    gap: 10px; /* Space between thumbnails */
+    margin-left: -300px; /* Left margin for thumbnails */
+   
+}
+
+#thumbnails li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#thumbnails li:hover {
+    transform: scale(1.1); /* Scale up on hover for visual effect */
+}
+
+#thumbnails li::before {
+    content: '\2022'; /* Bullet point character */
+    color: #666; /* Gray bullet color */
+    margin-right: 5px; /* Space between bullet and thumbnail */
+}
+
+#thumbnails img {
+    width: 80px; /* Thumbnail width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid transparent; /* Transparent border */
+    transition: border-color 0.3s ease, filter 0.3s ease; /* Smooth transitions for border and filter */
+}
+
+#thumbnails img:hover,
+#thumbnails img.active {
+    border-color: skyblue; /* Border color on hover or when active */
+}
+
+#thumbnails img.inactive {
+    filter: grayscale(100%); /* Grayscale effect for inactive thumbnails */
+}

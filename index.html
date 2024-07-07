@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Dynamic Image Gallery</h1>
+
+	<div class="gallery">
+            <!-- Featured Image with Caption and Interesting Fact -->
+    <figure>
+        
+        <img id="featured" src="images/flowers-pink-large.jpg" alt="Pink Flowers">
+        <figcaption id="caption">Beautiful pink flowers in full bloom.</figcaption>
+                <p id="interesting-fact">Pink flowers symbolize admiration, gratitude, and appreciation.</p>
+    </figure>
+
+    <ul id="thumbnails" class="thumbnails">
+        <!-- Thumbnails will be dynamically generated here -->
+        <li><img src="images/flowers-pink-large.jpg" alt="" width="240" height="160" /></li>
+        <li><img src="images\flowers-purple-small.jpg" alt="" width="240" height="160" /></li>
+        <li><img src="images\flowers-red-small.jpg" alt="" width="240" height="160" /></li>
+        <li><img src="images\flowers-white-small.jpg" alt="" width="240" height="160" /></li>
+        <li><img src="images\flowers-yellow-small.jpg" alt="" width="240" height="160" /></li>
+    </ul>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+        <button id="prevBtn" onclick="prevImage()">Previous</button>
+        <button id="nextBtn" onclick="nextImage()">Next</button>
+    </div>
+</div>
+</div>
+    <script src="scripts.js"></script>
+    <!-- PHOTO CREDITS
+	Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
+
+	Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40957238
+
+	Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48211466
+
+	Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48576226
+
+	Market in Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62071586
+	-->
+</body>
+</html>
